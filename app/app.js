@@ -74,6 +74,7 @@ var AppView = Backbone.View.extend({
         var self = this;
         console.log(self);
         alert("hi");
+        self.sign_up_view.fadeOut(500);
 
     },
 
@@ -81,7 +82,7 @@ var AppView = Backbone.View.extend({
         var self = this;
         console.log(self);
         alert("hi");
-
+        self.sign_up_view.fadeOut(500);
     },
 
     edit_profile:  function(){
@@ -138,7 +139,7 @@ var AppView = Backbone.View.extend({
         self.map_canvas = $('#map_canvas');
         self.header = $('header');
         self.companies_holder = $('#companies_holder');
-
+        self.sign_up_view = $('#sign_up');
         // initialize map
         self._initialize_map();
 
